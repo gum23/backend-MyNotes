@@ -12,7 +12,7 @@ var _config = _interopRequireDefault(require("./config.js"));
       case 0:
         _context.prev = 0;
         _context.next = 3;
-        return _mongoose["default"].connect("mongodb://".concat(_config["default"].MONGO_HOST, "/").concat(_config["default"].MONGO_DATABASE));
+        return _mongoose["default"].connect("mongodb+srv://".concat(_config["default"].MONGO_HOST, ":").concat(_config["default"].MONGO_PASSWORD, "@mynotescluster.tbcl9ue.mongodb.net/?retryWrites=true&w=majority"));
       case 3:
         db = _context.sent;
         console.log("Database is connected to: ", db.connection.name);
